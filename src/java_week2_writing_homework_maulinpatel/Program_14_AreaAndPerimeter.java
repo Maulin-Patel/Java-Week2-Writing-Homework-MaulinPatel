@@ -13,9 +13,9 @@ import java.util.Scanner;
 public class Program_14_AreaAndPerimeter {
 
     // Calculating area and perimeter of rectangle
-    public static void areaAndPerimeterOfRectangle(int height, int width) {
-        int perimeter = 2 * (height + width);
-        int area = (height * width);
+    public static void areaAndPerimeterOfRectangle(double height, double width) {
+        double perimeter = 2 * (height + width);
+        double area = (height * width);
         System.out.println("The area of the rectangle is : " + area);
         System.out.println("The perimeter of the rectangle is : " + perimeter);
     }
@@ -24,9 +24,9 @@ public class Program_14_AreaAndPerimeter {
         //Scanner declaration for reading input form console
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the width of the rectangle: ");
-        int height = scanner.nextInt();
+        double height = scanner.nextDouble();
         System.out.print("Enter the height of the rectangle: ");
-        int width = scanner.nextInt();
+        double width = scanner.nextDouble();
         areaAndPerimeterOfRectangle(height, width);
         // closing the scanner object
         scanner.close();
